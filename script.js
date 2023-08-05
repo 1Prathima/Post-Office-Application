@@ -32,7 +32,7 @@ function getGeoInfo(IP) {
         org.innerText = `Organisation: ${data.org}`;
         host.innerText = `Hostname: ${window.location.hostname}`;
 
-        map.src = `https://maps.google.com/maps?q=${data.loc.split(',')[0]}, ${data.loc.split(',')[0]}&z=15&output=embed`;
+        map.src = `https://maps.google.com/maps?q=${data.loc.split(',')[0]}, ${data.loc.split(',')[1]}&z=15&output=embed`;
 
         timeZone.innerText = `Time Zone: ${data.timezone}`;
         dateTime.innerText = `Date and Time: ${new Date().toLocaleString("en-US", { timeZone: data.timezone})}`;
